@@ -1,2 +1,191 @@
+// IMPORT
 
 @import "_bootstrap.scss";
+
+// GLOBAL
+
+html{
+	
+	font-family:'Roboto', Arial, sans-serif;
+	font-weight: 400;
+}
+
+body{
+	
+	font-family:'Roboto', Arial, sans-serif;
+	font-weight: 400;
+}
+
+// HEADINGS
+
+.heading{
+
+	&-primary{
+		font-size: 4em; //56:14
+
+		&--light{
+			color:#bcbebe;
+		}
+	}
+
+	&-secondary{
+		font-size: 2.428571429em; //34:14
+
+		&--dark{
+			color: #424242;
+		}
+
+		&--light{
+			color: #4B4E4F;
+		}
+	}
+
+	&-tertiary{
+		font-size: 1.714285714em; //24:14
+		
+		&--dark{
+			color: #616161;
+		}
+
+	}
+
+	&-quinary{
+		font-size: 1.428571429em; //20:14
+
+		&--dark{
+			color: #202020;
+		}
+	
+	}
+
+	&-senary{
+		font-size: 1.142857143em; //16:14
+
+		&--dark{
+			color: #2A2D2E;
+		}
+	
+	}
+
+	&--header{
+		font-weight: 300;
+		margin: 20px 0;
+	}
+
+}
+
+// BACKGROUNDS
+
+.bg{
+	
+	&--sub{
+		background-color: #fafafa;
+	}
+
+	&--form{
+		background-color: #f6f6f6;
+	}
+}
+
+// FORM
+
+.form{
+	text-align: center;
+
+	&-holder{
+		color:#202020;
+		padding: 15px 0;
+		margin-top: 50px;
+		margin-bottom:50px;
+		
+	}
+
+	&__heading{
+		margin:15px 0;
+	}
+
+	&__item{
+
+		&-holder{
+			width: 80%;
+			text-align: left;
+			display: inline-block;
+			margin: 15px 0;
+		}
+	}	
+		
+	&__label{
+		font-size: 0.8571428571em;
+		color: #A0A1A1;
+		
+	}
+
+	&__input-text{
+		font-size: 1.142857143em;
+		width: 100%;
+		display: block;
+		border:none;
+		border-bottom: 1px solid #9a9b9b;
+		background: transparent;
+		outline: none;
+	}
+	
+}
+
+// CTA
+
+.btn{
+
+	border:none;
+	border-radius: 2px;
+	
+	&--cta{
+	text-transform:uppercase;
+	padding: 15px 20px;
+	font-size: 1.14285714em;
+	margin: 10px 0;
+	}
+}
+
+// HEADER
+
+.header{
+
+	padding: 60px 0;
+
+	&--top{
+		text-align: center;
+	}
+
+	&--bottom{
+		text-align: center;
+		&__text{
+			color: #efefef;
+			margin: 20px 0;
+		}
+	}
+	
+}
+
+.logo{
+	display: inline-block;
+	margin: 30px 0 80px 0;
+}
+
+
+
+
+
+@media (min-width: $screen-sm) {
+	
+	.background{
+		&-main{
+			&--lg{
+				background: url(../images/background-lg.png) no-repeat center center;
+				background-size: cover;
+			}
+		}
+	}
+
+	
+}

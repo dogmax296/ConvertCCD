@@ -1377,7 +1377,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #333333;
+  color: #454848;
   background-color: #fff;
 }
 
@@ -1476,7 +1476,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -3487,7 +3487,7 @@ select[multiple].input-lg, .input-group-lg > select[multiple].form-control,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #848989;
 }
 
 @media (min-width: 768px) {
@@ -3733,20 +3733,20 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #9c27b0;
   border-color: #2e6da4;
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
+  background-color: #771e86;
   border-color: #122b40;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
+  background-color: #771e86;
   border-color: #204d74;
 }
 
@@ -3754,7 +3754,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #286090;
+  background-color: #771e86;
   border-color: #204d74;
 }
 
@@ -3768,7 +3768,7 @@ fieldset[disabled] .btn-default.active {
 .open > .btn-primary.dropdown-toggle:focus,
 .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #204d74;
+  background-color: #5d1769;
   border-color: #122b40;
 }
 
@@ -3796,12 +3796,12 @@ fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #337ab7;
+  background-color: #9c27b0;
   border-color: #2e6da4;
 }
 
 .btn-primary .badge {
-  color: #337ab7;
+  color: #9c27b0;
   background-color: #fff;
 }
 
@@ -7920,6 +7920,151 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important;
+  }
+}
+
+html {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.heading-primary {
+  font-size: 4em;
+}
+
+.heading-primary--light {
+  color: #bcbebe;
+}
+
+.heading-secondary {
+  font-size: 2.428571429em;
+}
+
+.heading-secondary--dark {
+  color: #424242;
+}
+
+.heading-secondary--light {
+  color: #4B4E4F;
+}
+
+.heading-tertiary {
+  font-size: 1.714285714em;
+}
+
+.heading-tertiary--dark {
+  color: #616161;
+}
+
+.heading-quinary {
+  font-size: 1.428571429em;
+}
+
+.heading-quinary--dark {
+  color: #202020;
+}
+
+.heading-senary {
+  font-size: 1.142857143em;
+}
+
+.heading-senary--dark {
+  color: #2A2D2E;
+}
+
+.heading--header {
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.bg--sub {
+  background-color: #fafafa;
+}
+
+.bg--form {
+  background-color: #f6f6f6;
+}
+
+.form {
+  text-align: center;
+}
+
+.form-holder {
+  color: #202020;
+  padding: 15px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.form__heading {
+  margin: 15px 0;
+}
+
+.form__item-holder {
+  width: 80%;
+  text-align: left;
+  display: inline-block;
+  margin: 15px 0;
+}
+
+.form__label {
+  font-size: 0.8571428571em;
+  color: #A0A1A1;
+}
+
+.form__input-text {
+  font-size: 1.142857143em;
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #9a9b9b;
+  background: transparent;
+  outline: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 2px;
+}
+
+.btn--cta {
+  text-transform: uppercase;
+  padding: 15px 20px;
+  font-size: 1.14285714em;
+  margin: 10px 0;
+}
+
+.header {
+  padding: 60px 0;
+}
+
+.header--top {
+  text-align: center;
+}
+
+.header--bottom {
+  text-align: center;
+}
+
+.header--bottom__text {
+  color: #efefef;
+  margin: 20px 0;
+}
+
+.logo {
+  display: inline-block;
+  margin: 30px 0 80px 0;
+}
+
+@media (min-width: 768px) {
+  .background-main--lg {
+    background: url(../images/background-lg.png) no-repeat center center;
+    background-size: cover;
   }
 }
 
