@@ -11,9 +11,7 @@
 		<!-- FONTS -->
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 	
-		<!-- JS -->
-		<script src="http://code.jquery.com/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		
 		
 	</head>
 
@@ -145,7 +143,7 @@
 
 									<!-- START heading-secondary -->
 									
-									<h2 class="heading-secondary--dark heading-secondary--custom heading-secondary">
+									<h2 class="heading heading-secondary--dark heading-secondary--custom heading-secondary">
 										This is your first amazing feature and it's awesome!
 
 									</h2>
@@ -163,10 +161,14 @@
 								<!-- START amazing-feature__thumbs-->
 
 								<div class="col-sm-6 amazing-feature__item amazing-feature__thumbs">
+
+									<!-- START row-->
 									
 									<div class="row">
 
-									  <div class="col-sm-6">
+										<!-- START col-sm-6-->
+
+									  	<div class="col-sm-6">
 
 										    <div class="thumbnail thumbnail--custom">
 
@@ -183,9 +185,13 @@
 
 										    </div>
 
-									  </div>
+									  	</div>
 
-									   <div class="col-sm-6">
+									  	<!-- END col-sm-6-->
+
+									  	<!-- START col-sm-6-->
+
+									  	<div class="col-sm-6">
 
 										    <div class="thumbnail thumbnail--custom">
 
@@ -203,9 +209,13 @@
 
 										    </div>
 									    
-									  </div>
+									  	</div>
+
+									  	<!-- END col-sm-6-->
 
 									</div>
+
+									<!-- END row-->
 
 								</div>
 
@@ -239,9 +249,9 @@
 					
 					<div class="features">
 
-						<h2 class="heading-secondary heading-secondary--light">Features</h2>
+						<h2 class="heading heading-secondary heading-secondary--light heading-secondary--features">Features</h2>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat consequatur, facere sit, optio eum porro.</p>
+						<p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat consequatur, facere sit, optio eum porro.</p>
 
 						<!-- START features__content -->
 
@@ -281,9 +291,7 @@
 
 									    	</div>
 
-									    </div>
-
-									 
+									    </div>									 
 								 	</div>
 
 								</div>
@@ -295,47 +303,57 @@
 
 								    	<li role="presentation" class="features__tab active">
 
-								    	<a href="#feature1" aria-controls="feature1" role="tab" data-toggle="tab" class="features__tab-link">
+									    	<a href="#feature1" aria-controls="feature1" role="tab" data-toggle="tab" class="features__tab-link">
 
-								    		<span class="features__heading-holder">
+									    		<span class="features__icons-holder">
 
-								    			<i class="icon-number features__icon"></i>
+									    			<i class="icon-number features__icon"></i>
 
-								    			<i class="icon-number11 features__icon icon-number--dark"></i>
+									    			<i class="icon-number11 features__icon icon-number--dark"></i>
 
-								    			<h5 class="heading-senary heading-senary--dark features__heading">Feature number 1</h5>
+									    		</span>
 
-								    		</span>
+									    		<div class="features__info-holder">
+									    										
+										    		<h5 class="heading heading-senary heading-senary--dark features__heading">Feature number 1</h5>
+										    		
+										    		<div class="features__description">
 
-								    		<div class="features__description">
-								    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rerum aspernatur vel, soluta ut nesciunt id dicta vitae eum est.
-								    		</div>
+										    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rerum aspernatur vel, soluta ut nesciunt id dicta vitae eum est.
 
-								    		
+										    		</div>
 
-								    	</a>
+										    	</div>
+									    		
+									    	</a>
 
 								    	</li>
 
 								    	<li role="presentation" class="features__tab">
 
-								    	<a href="#feature2" aria-controls="feature2" role="tab" data-toggle="tab" class="features__tab-link">
+									    	<a href="#feature2" aria-controls="feature2" role="tab" data-toggle="tab" class="features__tab-link">
 
-								    		<span class="features__heading-holder">
+									    		<span class="features__icons-holder">
 
-								    			<i class="icon-number2 features__icon"></i>
+									    			<i class="icon-number features__icon"></i>
 
-								    			<i class="icon-number12 features__icon icon-number--dark"></i>
+									    			<i class="icon-number11 features__icon icon-number--dark"></i>
 
-								    			<h5 class="heading-senary heading-senary--dark features__heading">Feature number 2</h5>
+									    		</span>
 
-								    		</span>
+									    		<div class="features__info-holder">
+									    										
+										    		<h5 class="heading heading-senary heading-senary--dark features__heading">Feature number 1</h5>
+										    		
+										    		<div class="features__description">
 
-								    		<div class="features__description">
-								    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rerum aspernatur vel, soluta ut nesciunt id dicta vitae eum est.
-								    		</div>
+										    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rerum aspernatur vel, soluta ut nesciunt id dicta vitae eum est.
 
-								    	</a>
+										    		</div>
+
+										    	</div>
+
+									    	</a>
 
 								    	</li>
 
@@ -343,19 +361,25 @@
 
 								    	<a href="#feature3" aria-controls="feature3" role="tab" data-toggle="tab" class="features__tab-link">
 
-								    		<span class="features__heading-holder">
+								    		<span class="features__icons-holder">
 
-								    			<i class="icon-number3 features__icon"></i>
+									    			<i class="icon-number features__icon"></i>
 
-								    			<i class="icon-number13 features__icon icon-number--dark"></i>
+									    			<i class="icon-number11 features__icon icon-number--dark"></i>
 
-								    			<h5 class="heading-senary heading-senary--dark features__heading">Feature number 3</h5>
+									    		</span>
 
-								    		</span>
+									    		<div class="features__info-holder">
+									    										
+										    		<h5 class="heading heading-senary heading-senary--dark features__heading">Feature number 1</h5>
+										    		
+										    		<div class="features__description">
 
-								    		<div class="features__description">
-								    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rerum aspernatur vel, soluta ut nesciunt id dicta vitae eum est.
-								    		</div>
+										    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rerum aspernatur vel, soluta ut nesciunt id dicta vitae eum est.
+
+										    		</div>
+
+										    	</div>
 
 								    	</a>
 
@@ -388,11 +412,323 @@
 			</div>
 
 			<!--END features  -->
+			
+			<!--START  carousel__img-holder -->
+
+			<div class="bg--sub carousel__img-holder">
+				
+				<div id="carousel__img">
+          
+				  <div class="item"><img src="images/content/carousel/img1.jpg" alt="IMG 1"></div>
+				  <div class="item"><img src="images/content/carousel/img2.jpg" alt="IMG 2"></div>
+				  <div class="item"><img src="images/content/carousel/img3.jpg" alt="IMG 3"></div>
+				  <div class="item"><img src="images/content/carousel/img4.jpg" alt="IMG 4"></div>
+				  <div class="item"><img src="images/content/carousel/img5.jpg" alt="IMG 5"></div>
+				  <div class="item"><img src="images/content/carousel/img6.jpg" alt="IMG 6"></div>
+				  <div class="item"><img src="images/content/carousel/img7.jpg" alt="IMG 7"></div>
+				  <div class="item"><img src="images/content/carousel/img8.jpg" alt="IMG 8"></div>
+				 
+				</div>
+
+			</div>
+
+			<!--END  carousel__img-holder -->
+
+			<!-- START faq -->
+
+			<div class="bg--sub faq">
+
+				<!-- START container -->
+
+				<div class="container">
+
+					<!--START  heading-seondary-->
+					
+					<h2 class="heading heading-secondary heading-secondary--dark"> 
+
+						Frequently Asked Questions
+
+					</h2>
+
+					<!--END  heading-seondary-->
+
+					<p>
+
+						Got questions? We have answers.
+
+					</p>
+
+					<div class="faq__question">
+						
+						<div class="row">
+							
+							<div class="col-sm-6">
+								
+								<h4 class="heading-quinary heading-quinary--dark">
+
+									How does the free trial work?
+
+								</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis commodi distinctio labore accusamus, harum veniam quaerat amet nostrum temporibus odit incidunt. Ad maxime, voluptatem at porro nihil alias, voluptatibus adipisci.</p>
+
+							</div>
+
+							<div class="col-sm-6">
+								
+								<h4 class="heading-quinary heading-quinary--dark">
+
+									Do I need to choose plan now?
+
+								</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis commodi distinctio labore accusamus, harum veniam quaerat amet nostrum temporibus odit incidunt.</p>
+
+							</div>
+
+						</div>
+
+						<div class="row">
+							
+							<div class="col-sm-6">
+								
+								<h4 class="heading-quinary heading-quinary--dark">
+
+									Can I switch plans later?
+
+								</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+							</div>
+
+							<div class="col-sm-6">
+								
+								<h4 class="heading-quinary heading-quinary--dark">
+
+									What payment types do you accept?
+
+								</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis commodi distinctio labore accusamus, harum veniam quaerat amet nostrum temporibus odit incidunt.</p>
+
+							</div>
+
+						</div>						
+
+					</div>
+
+				</div>
+
+				<!-- END container -->
+
+			</div>
+
+			<!-- END faq -->
+
+			<!-- START testimonials -->
+
+			<div class="testimonials">
+
+				<!-- START container -->
+
+				<div class="container">
+
+					<!-- START row -->
+
+					<div class="row">
+
+						<!-- START col-sm-6 -->
+
+						<div class="col-sm-6">
+
+							<h2 class="heading heading-secondary heading-secondary--dark">
+
+								This is your first amazing feature and it's awesome!
+
+							</h2>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, natus. testimonials</p>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ducimus.</p>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, et. testimonials testimonials</p>
+
+						</div>
+
+						<!-- END col-sm-6 -->
+
+						<!-- START col-sm-6 -->
+
+						<div class="col-sm-6">
+
+							<div class="carousel__testimonials">
+
+								<div id="carousel__testimonials">
+          
+								  	<div class="item">
+
+									  	<div class="center-block testimonials__img testimonials__img--author1"></div>
+
+									  	<div class="text-center center-block testimonials__citation-holder">
+									  		
+									  		<span class="heading-senary heading-senary--dark testimonials__citation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sapiente similique natus amet, quos labore!</span>
+
+									  	</div>
+									  		
+									  	<div class="text-center center-block testimonials__author-holder">
+
+									  		<span class="testimonials__author">Alexa Serkin, Microsoft</span>
+
+									  	</div>
+
+								  	</div>
+
+									<div class="item">
+
+									  	<div class="center-block testimonials__img testimonials__img--author2"></div>
+
+									  	<div class="text-center center-block testimonials__citation-holder">
+									  		
+									  		<span class="heading-senary heading-senary--dark testimonials__citation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sapiente similique natus amet, quos labore!</span>
+
+									  	</div>
+									  		
+									  	<div class="text-center center-block testimonials__author-holder">
+
+									  		<span class="testimonials__author">Masha J, Facebook</span>
+
+									  	</div>
+
+								  	</div>
+
+								  	<div class="item">
+
+									  	<div class="center-block testimonials__img testimonials__img--author3"></div>
+
+									  	<div class="text-center center-block testimonials__citation-holder">
+									  		
+									  		<span class="heading-senary heading-senary--dark testimonials__citation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sapiente similique natus amet, quos labore!</span>
+
+									  	</div>
+									  		
+									  	<div class="text-center center-block testimonials__author-holder">
+
+									  		<span class="testimonials__author">Victoria O, Google </span>
+
+									  	</div>
+
+								  	</div>
+
+									<div class="item">
+
+									  	<div class="center-block testimonials__img testimonials__img--author4"></div>
+
+									  	<div class="text-center center-block testimonials__citation-holder">
+									  		
+									  		<span class="heading-senary heading-senary--dark testimonials__citation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sapiente similique natus amet, quos labore!</span>
+
+									  	</div>
+									  		
+									  	<div class="text-center center-block testimonials__author-holder">
+
+									  		<span class="testimonials__author">Jill Doe, Apple</span>
+
+									  	</div>
+
+								  	</div>
+								  								 
+								  								 
+								</div>
+
+
+							</div>
+
+						</div>
+
+						<!-- END col-sm-6 -->
+
+					</div>
+
+					<!-- END row -->
+
+				</div>
+
+				<!-- END container -->
+
+			</div>
+
+			<!-- END testimonials -->
+
+			<!--START  carousel__clients-holder -->
+
+			<div class="carousel__clients-holder">
+
+				<div class="container">
+				
+					<div id="carousel__clients">
+	          
+					  <div class="item"><img src="images/content/clients/client1.png" alt="Client 1"></div>
+					  <div class="item"><img src="images/content/clients/client2.png" alt="Client 2"></div>
+					  <div class="item"><img src="images/content/clients/client3.png" alt="Client 3"></div>
+					 <div class="item"><img src="images/content/clients/client4.png" alt="Client 4"></div>
+					  <div class="item"><img src="images/content/clients/client5.png" alt="Client 5"></div>
+					  <div class="item"><img src="images/content/clients/client6.png" alt="Client 6"></div>
+					  <div class="item"><img src="images/content/clients/client7.png" alt="Client 7"></div>
+					  <div class="item"><img src="images/content/clients/client8.png" alt="Client 8"></div>
+									 
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--END  carousel__img-holder -->
+
+			<div class="text-center bg--sub call-to-action">
+				
+				<h2 class="heading heading-secondary heading-secondary--dark call-to-action__heading">
+					
+					A very clear closing argument statement of your offer.
+
+				</h2>
+
+				<div class="call-to-action__btn">
+
+					<button href="#" class="btn btn-primary btn--cta">apply right now</button>
+
+				</div>
+
+
+
+			</div>
 
 		</main>
 
 		<!-- END main -->
 
+		<!-- START footer -->
+
+		<footer class="text-center">
+			
+			<div class="copyrights">
+				
+				2015 Convert. Designed by Mat Przegietka. Markup and Customization by Max Ivanov. Made with <i class="glyphicon glyphicon-heart"></i>
+
+			</div>
+
+		</footer>
+
+		<!-- END footer -->
+
+
+
+
+		<!-- JS -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/carousel.js"></script>
 
 	</body>
 

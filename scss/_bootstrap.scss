@@ -18,7 +18,9 @@
 // Reset and dependencies
 @import "bootstrap/normalize";
 @import "bootstrap/print";
-// @import "bootstrap/glyphicons";
+@import "bootstrap/glyphicons";
+
+// CUSTOM glyphs
 @import "glyphs";
 
 // Core CSS
@@ -57,7 +59,11 @@
 @import "bootstrap/modals";
 @import "bootstrap/tooltip";
 @import "bootstrap/popovers";
-@import "bootstrap/carousel";
+// @import "bootstrap/carousel";
+
+// Owl Carousel
+@import "owl.carousel";
+@import "owl.theme";
 
 // Utility classes
 @import "bootstrap/utilities";

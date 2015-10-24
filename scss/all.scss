@@ -2,6 +2,7 @@
 
 @import "_bootstrap.scss";
 
+
 // GLOBAL
 
 html{
@@ -19,6 +20,8 @@ body{
 // HEADINGS
 
 .heading{
+
+	margin: 0;
 
 	&-primary{
 		font-size: 4em; //56:14
@@ -40,9 +43,14 @@ body{
 		}
 
 		&--custom{
-			margin-top: 0;
 			margin-bottom: 45px;
 		}
+
+		&--features{
+			padding: 20px 0;
+			
+		}
+
 	}
 
 	&-tertiary{
@@ -70,6 +78,8 @@ body{
 		&--dark{
 			color: #2A2D2E;
 		}
+
+		
 	
 	}
 
@@ -181,7 +191,7 @@ body{
 }
 
 //AMAZING FEATURE
-	.amazing{
+.amazing{
 		&-feature{
 			&-holder{
 				padding: 75px 0 35px 0;
@@ -195,7 +205,7 @@ body{
 				}
 			}
 		}
-	}
+}
 
 
 // THUMBNAILS
@@ -224,25 +234,54 @@ body{
 
 .features{
 	text-align: center;
+	&__content{
+		margin: 55px 0;
+	}
+
 	&__tab{
 		&-link{
 			text-align: left;
+			
 		}
 	}
-	
-	&__heading-holder{
-		font-size: 0;
+
+	&-holder{
+		padding: 55px 0 0 0;
 	}
+	
+	
 	&__heading{
-		font-size: $font-size-base;
-		display: inline-block;
-		vertical-align: middle;
+		
+		
+		@include features__item-heading--padding;
+	}
+
+	&__description{
+		margin: 15px 0;
+	}
+
+	&__icons{
+		&-holder{
+			float: left;
+			@include features__item-heading--padding;
+			
+		}
 	}
 	&__icon{
-		font-size: $font-size-base;
+		
 		display: inline-block;
-		font-size: 25px;
+		font-size: 35px;
     	vertical-align: middle;
+	}
+
+	&__text{
+		padding: 20px 0;
+	}
+
+	&__info{
+		&-holder{
+			overflow: hidden;
+		}
 	}
 
 }
@@ -251,6 +290,9 @@ body{
 	li{
 		.active{
 			background-color: transparent;
+		}
+		a{
+			padding: 0;
 		}
 	}
 }
@@ -278,10 +320,143 @@ body{
 	background-color: transparent;
 }
 
-.icon-number11,.icon-number12,.icon-number13{
-	display: none;
+// .icon-number11,.icon-number12,.icon-number13{
+// 	display: none;
+// }
+
+// CAROUSEL
+
+
+#carousel{
+	&__img{
+		.item{
+			img{
+				display: block;
+				  width: 100%;
+				  height: auto;
+			}
+		}
+	}
+
+	&__testimonials{
+		.item{
+			img{
+				display: block;
+				  width: 100%;
+				  height: auto;
+			}
+		}
+
+		.owl-pagination{
+			.owl-page{		
+				span{
+
+					&:hover,
+					&:active{
+					background: #000;
+					border: 2px solid #000;
+					}
+
+					background: transparent;
+					border: 2px solid #868686;
+				}
+
+				&.active{
+					span{
+						background: #000;
+						border: 2px solid #000;
+					}
+				}
+			}
+		}
+
+
+	}
+
+	&__clients{
+		.item{
+			img{
+				display: block;
+				  width: 100%;
+				  height: auto;
+			}
+		}
+	}
 }
 
+.carousel{
+	&__img{
+		&-holder{
+			padding: 20px 0;
+		}
+	}
+}
+
+// FAQ
+
+.faq{
+	text-align: center;
+}
+
+//TESTIMONIALS
+
+.testimonials{
+	&__citation{
+
+		&-holder{
+			padding: 20px 0;
+		}
+		
+		
+		&:before,
+		&:after{
+			content:"\0022";
+		}
+	}
+
+	&__author{
+		
+		font-weight: 300;
+		
+		&-holder{
+			padding: 20px 0;
+		}
+	}
+
+	&__img{
+		width: 100px;
+		height: 100px;
+		border: none;
+		border-radius: 50%;
+		background-size: cover;
+		
+		&--author1{background: url(../images/content/testimonials/author1.png) no-repeat center center;}
+		&--author2{background: url(../images/content/testimonials/author2.png) no-repeat center center;}
+		&--author3{background: url(../images/content/testimonials/author3.png) no-repeat center center;}
+		&--author4{background: url(../images/content/testimonials/author4.png) no-repeat center center;}
+	}
+}
+
+// CALL TO ACTION
+
+.call-to-action{
+	
+	padding: 55px 0;
+
+	&__heading{
+		padding: 20px;
+	}
+
+	&__btn{
+		padding: 20px 0;
+	}
+}
+
+// COPYRIGHTS
+
+.copyrights{
+	padding: 60px 0;
+}
 
 @media (min-width: $screen-sm) {
 	
