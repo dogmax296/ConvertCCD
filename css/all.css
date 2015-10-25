@@ -7931,17 +7931,19 @@ button.close {
 }
 
 html {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
 }
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
 }
 
 .heading {
   margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .heading-primary {
@@ -7962,14 +7964,6 @@ body {
 
 .heading-secondary--light {
   color: #4B4E4F;
-}
-
-.heading-secondary--custom {
-  margin-bottom: 45px;
-}
-
-.heading-secondary--features {
-  padding: 20px 0;
 }
 
 .heading-tertiary {
@@ -7996,9 +7990,18 @@ body {
   color: #2A2D2E;
 }
 
-.heading--header {
-  font-weight: 300;
-  margin: 20px 0;
+.text {
+  margin: 0;
+}
+
+.text-padding--standart {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.text-padding--custom {
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .bg--sub {
@@ -8017,11 +8020,7 @@ body {
   color: #202020;
   padding: 15px 0;
   margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.form__heading {
-  margin: 15px 0;
+  margin-bottom: 25px;
 }
 
 .form__item-holder {
@@ -8058,8 +8057,23 @@ body {
   margin: 10px 0;
 }
 
+.btn--scroll {
+  color: #FFF;
+  font-size: 2.5em;
+}
+
+.btn--scroll:hover,
+.btn--scroll:focus,
+.btn--scroll:active {
+  color: #f6f6f6;
+}
+
+.btn--scroll-holder {
+  padding: 25px 0;
+}
+
 .header {
-  padding: 60px 0;
+  padding: 60px 0 25px 0;
 }
 
 .header--top {
@@ -8072,7 +8086,11 @@ body {
 
 .header--bottom__text {
   color: #efefef;
-  margin: 20px 0;
+  font-size: 1.142857143em;
+}
+
+.header__heading {
+  font-weight: 300;
 }
 
 .logo {
@@ -8081,11 +8099,7 @@ body {
 }
 
 .amazing-feature-holder {
-  padding: 75px 0 35px 0;
-}
-
-.amazing-feature__item-text {
-  margin: 40px 0;
+  padding: 55px 0;
 }
 
 .thumbnail--custom {
@@ -8102,16 +8116,12 @@ body {
   margin-right: 0;
 }
 
-.thumbnail__text {
-  margin: 40px 0;
-}
-
 .features {
   text-align: center;
 }
 
 .features__content {
-  margin: 55px 0;
+  padding: 40px 0 0 0;
 }
 
 .features__tab-link {
@@ -8119,30 +8129,17 @@ body {
 }
 
 .features-holder {
-  padding: 55px 0 0 0;
-}
-
-.features__heading {
-  padding: 20px 0;
-}
-
-.features__description {
-  margin: 15px 0;
+  padding: 55px 0 20px 0;
 }
 
 .features__icons-holder {
   float: left;
-  padding: 20px 0;
 }
 
 .features__icon {
   display: inline-block;
   font-size: 35px;
   vertical-align: middle;
-}
-
-.features__text {
-  padding: 20px 0;
 }
 
 .features__info-holder {
@@ -8216,15 +8213,16 @@ body {
 }
 
 .carousel__img-holder {
-  padding: 20px 0;
+  padding: 20px 0 25px 0;
 }
 
 .faq {
   text-align: center;
+  padding: 20px 0 35px 0;
 }
 
-.testimonials__citation-holder {
-  padding: 20px 0;
+.testimonials {
+  padding: 55px 0 0 0;
 }
 
 .testimonials__citation:before,
@@ -8234,10 +8232,6 @@ body {
 
 .testimonials__author {
   font-weight: 300;
-}
-
-.testimonials__author-holder {
-  padding: 20px 0;
 }
 
 .testimonials__img {
@@ -8268,16 +8262,20 @@ body {
   padding: 55px 0;
 }
 
-.call-to-action__heading {
-  padding: 20px;
-}
-
 .call-to-action__btn {
   padding: 20px 0;
 }
 
 .copyrights {
   padding: 60px 0;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: none;
+  z-index: 1070;
 }
 
 @media (min-width: 768px) {

@@ -1,3 +1,18 @@
-@mixin features__item-heading--padding{
-	padding: 20px 0;
+// HEADING PADDING
+
+@mixin heading-padding{
+	padding-top: $padding-standart-top;
+	padding-bottom: $padding-standart-bottom;
+}
+
+// TEXT PADDING
+
+@mixin standart-text-padding{
+	padding-top: $padding-standart-top;
+	padding-bottom: $padding-standart-bottom;
+}
+
+@mixin custom-text-padding{
+	padding-top: $padding-standart-top;
+	padding-bottom: $padding-text-bottom;
 }

@@ -7,13 +7,13 @@
 
 html{
 	
-	font-family:'Roboto', Arial, sans-serif;
+	font-family: $font-family-sans-serif;
 	font-weight: 400;
 }
 
 body{
 	
-	font-family:'Roboto', Arial, sans-serif;
+	font-family: $font-family-sans-serif;
 	font-weight: 400;
 }
 
@@ -22,6 +22,7 @@ body{
 .heading{
 
 	margin: 0;
+	@include heading-padding;
 
 	&-primary{
 		font-size: 4em; //56:14
@@ -40,16 +41,7 @@ body{
 
 		&--light{
 			color: #4B4E4F;
-		}
-
-		&--custom{
-			margin-bottom: 45px;
-		}
-
-		&--features{
-			padding: 20px 0;
-			
-		}
+		}		
 
 	}
 
@@ -78,16 +70,25 @@ body{
 		&--dark{
 			color: #2A2D2E;
 		}
-
-		
 	
 	}
 
-	&--header{
-		font-weight: 300;
-		margin: 20px 0;
-	}
 
+}
+
+.text{
+	margin: 0;
+
+	&-padding{
+
+		&--standart{
+			@include standart-text-padding;
+		}
+
+		&--custom{
+			@include custom-text-padding;
+		}
+	}
 }
 
 // BACKGROUNDS
@@ -112,13 +113,11 @@ body{
 		color:#202020;
 		padding: 15px 0;
 		margin-top: 50px;
-		margin-bottom:50px;
+		margin-bottom: 25px;
 		
 	}
 
-	&__heading{
-		margin:15px 0;
-	}
+	
 
 	&__item{
 
@@ -161,13 +160,29 @@ body{
 	font-size: 1.14285714em;
 	margin: 10px 0;
 	}
+
+	&--scroll{
+		color: #FFF;
+		font-size: 2.5em;
+		&:hover,
+		&:focus,
+		&:active{
+			color: #f6f6f6;
+		}
+
+		&-holder{
+			padding: 25px 0;
+		}
+
+		
+	}
 }
 
 // HEADER
 
 .header{
 
-	padding: 60px 0;
+	padding: 60px 0 25px 0;
 
 	&--top{
 		text-align: center;
@@ -177,10 +192,14 @@ body{
 		text-align: center;
 		&__text{
 			color: #efefef;
-			margin: 20px 0;
+			font-size: 1.142857143em;
+			
 		}
 	}
 	
+	&__heading{
+		font-weight: 300;
+	}
 }
 
 // LOGO
@@ -194,16 +213,10 @@ body{
 .amazing{
 		&-feature{
 			&-holder{
-				padding: 75px 0 35px 0;
+				padding: 55px 0;
 			}
 
-			&__item{
-				&-text{
-					
-					margin: 40px 0;
-					
-				}
-			}
+			
 		}
 }
 
@@ -225,9 +238,6 @@ body{
 		margin-right: 0;
 	}
 
-	&__text{
-		margin: 40px 0;
-	}
 }
 
 // FEATURES
@@ -235,7 +245,7 @@ body{
 .features{
 	text-align: center;
 	&__content{
-		margin: 55px 0;
+		padding: 40px 0 0 0;
 	}
 
 	&__tab{
@@ -246,24 +256,15 @@ body{
 	}
 
 	&-holder{
-		padding: 55px 0 0 0;
-	}
-	
-	
-	&__heading{
-		
-		
-		@include features__item-heading--padding;
+		padding: 55px 0 20px 0;
 	}
 
-	&__description{
-		margin: 15px 0;
-	}
+	
 
 	&__icons{
 		&-holder{
 			float: left;
-			@include features__item-heading--padding;
+			
 			
 		}
 	}
@@ -272,10 +273,6 @@ body{
 		display: inline-block;
 		font-size: 35px;
     	vertical-align: middle;
-	}
-
-	&__text{
-		padding: 20px 0;
 	}
 
 	&__info{
@@ -348,6 +345,7 @@ body{
 		}
 
 		.owl-pagination{
+
 			.owl-page{		
 				span{
 
@@ -367,6 +365,8 @@ body{
 						border: 2px solid #000;
 					}
 				}
+
+				
 			}
 		}
 
@@ -387,7 +387,7 @@ body{
 .carousel{
 	&__img{
 		&-holder{
-			padding: 20px 0;
+			padding: 20px 0 25px 0;
 		}
 	}
 }
@@ -396,18 +396,17 @@ body{
 
 .faq{
 	text-align: center;
+	padding: 20px 0 35px 0;
 }
 
 //TESTIMONIALS
 
 .testimonials{
+
+	padding: 55px 0 0 0;
+
 	&__citation{
 
-		&-holder{
-			padding: 20px 0;
-		}
-		
-		
 		&:before,
 		&:after{
 			content:"\0022";
@@ -418,9 +417,7 @@ body{
 		
 		font-weight: 300;
 		
-		&-holder{
-			padding: 20px 0;
-		}
+		
 	}
 
 	&__img{
@@ -443,10 +440,6 @@ body{
 	
 	padding: 55px 0;
 
-	&__heading{
-		padding: 20px;
-	}
-
 	&__btn{
 		padding: 20px 0;
 	}
@@ -456,6 +449,17 @@ body{
 
 .copyrights{
 	padding: 60px 0;
+}
+
+//BACK TO TOP BTN
+
+.back-to-top{
+	
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: none;
+	z-index: $zindex-tooltip;
 }
 
 @media (min-width: $screen-sm) {
