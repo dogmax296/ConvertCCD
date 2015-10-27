@@ -8283,6 +8283,10 @@ body {
     background: url(../images/background-lg.png) no-repeat center center;
     background-size: cover;
   }
+  .call-to-action__bg {
+    background: url(../images/background-lg--cta.png) no-repeat center center;
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -461,7 +461,7 @@ body{
 	display: none;
 	z-index: $zindex-tooltip;
 }
-
+ 
 @media (min-width: $screen-sm) {
 	
 	.background{
@@ -469,7 +469,16 @@ body{
 			&--lg{
 				background: url(../images/background-lg.png) no-repeat center center;
 				background-size: cover;
+				
+				
 			}
+		}
+	}
+
+	.call-to-action{
+		&__bg{
+			background: url(../images/background-lg--cta.png) no-repeat center center;
+			background-size: cover;
 		}
 	}
 
