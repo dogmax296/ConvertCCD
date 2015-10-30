@@ -236,6 +236,7 @@ body{
 	>img{
 		margin-left: 0;
 		margin-right: 0;
+		display: inline-block;
 	}
 
 }
@@ -250,7 +251,7 @@ body{
 
 	&__tab{
 		&-link{
-			text-align: left;
+			text-align: center;
 			
 		}
 	}
@@ -263,7 +264,7 @@ body{
 
 	&__icons{
 		&-holder{
-			float: left;
+			float: none;
 			
 			
 		}
@@ -315,6 +316,10 @@ body{
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
 	border:none;
 	background-color: transparent;
+}
+
+.tab-content{
+	display: inline-block;
 }
 
 // .icon-number11,.icon-number12,.icon-number13{
@@ -457,12 +462,39 @@ body{
 	
 	position: fixed;
 	bottom: 0;
-	right: 0;
+	right: .5%;
 	display: none;
 	z-index: $zindex-tooltip;
 }
+
+// BACKGROUND XS
+
+.background{
+		&-main{
+			&--xs{
+				background: url(../images/background-xs.png) no-repeat center center;
+				background-size: cover;
+				
+				
+			}
+		}
+		&-cta{
+			&--xs{
+				background: url(../images/background-cta-xs.png) no-repeat center center;
+				background-size: cover;
+			}
+		}
+	}
+
+//  MAIN
+
+.main{
+	text-align: center;
+}
  
 @media (min-width: $screen-sm) {
+
+	// BACKGROUND XS
 	
 	.background{
 		&-main{
@@ -473,12 +505,39 @@ body{
 				
 			}
 		}
+
+		&-cta{
+			&--lg{
+				background: url(../images/background-cta-lg.png) no-repeat center center;
+				background-size: cover;
+			}
+		}
 	}
 
-	.call-to-action{
-		&__bg{
-			background: url(../images/background-lg--cta.png) no-repeat center center;
-			background-size: cover;
+	// CALL TO ACTION
+
+
+
+	// MAIN
+	.main{
+		&--lg{
+			text-align: -webkit-auto;
+		}
+		
+	}
+
+	// FEATURES
+	.features{
+		&__icons{
+			&-holder{
+				float: left;
+			}
+		}
+
+		&__tab{
+			&-link{
+				text-align: left;
+			}
 		}
 	}
 
