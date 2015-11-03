@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
  
-  $("#carousel__img").owlCarousel({
+  $("#carousel--main").owlCarousel({
  
       autoPlay: 5000, //Set AutoPlay to 3 seconds
  
@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
  
-  $("#carousel__clients").owlCarousel({
+  $("#carousel--clients").owlCarousel({
  
       autoPlay: 5000, //Set AutoPlay to 3 seconds
  

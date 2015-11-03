@@ -21,9 +21,6 @@ body{
 
 .heading{
 
-	margin: 0;
-	@include heading-padding;
-
 	&-primary{
 		font-size: 4em; //56:14
 
@@ -73,22 +70,63 @@ body{
 	
 	}
 
-
 }
 
-.text{
-	margin: 0;
+// MARGINS
 
-	&-padding{
-
-		&--standart{
-			@include standart-text-padding;
-		}
-
-		&--custom{
-			@include custom-text-padding;
-		}
+.margin{
+	&--xsmall{
+		@include element--margin-vertical(0, 30px);
 	}
+
+	&--small{
+		@include element--margin-vertical(0, 35px);
+	}
+
+	&--medium{
+		@include element--margin-vertical(0, 40px);
+	}
+
+	&--big{
+		@include element--margin-vertical(0, 45px);
+	}
+
+	&--xbig{
+		@include element--margin-vertical(0, 55px);
+	}
+}
+
+//PADDINGS
+.padding{
+
+	&--xxsmall{
+		@include element--padding-vertical(75px, 0);
+	}	
+
+	&--xsmall{
+		@include element--padding-vertical(75px, 30px);
+	}
+
+	&--small{
+		@include element--padding-vertical(35px, 75px);
+	}
+
+	&--medium{
+		@include element--padding-vertical(75px, 45px);
+	}
+	&--big{
+		@include element--padding-vertical(75px, 50px);
+	}
+
+	&--xbig{
+		@include element--padding-vertical(60px, 60px);
+	}
+
+	&--xxbig{
+		@include element--padding-vertical(75px, 65px);
+	}	
+
+	
 }
 
 // BACKGROUNDS
@@ -111,21 +149,20 @@ body{
 
 	&-holder{
 		color:#202020;
-		padding: 15px 0;
-		margin-top: 50px;
-		margin-bottom: 25px;
-		
+		@include element--padding-full(30px, 0, 15px, 0);
+		margin-top:25px;
+		margin-bottom:15px;		
 	}
 
 	
 
 	&__item{
 
-		&-holder{
-			width: 80%;
+		&-holder{			
 			text-align: left;
-			display: inline-block;
-			margin: 15px 0;
+			@include element--margin-full(0, 0, 15px, 0);
+			
+			
 		}
 	}	
 		
@@ -144,6 +181,10 @@ body{
 		background: transparent;
 		outline: none;
 	}
+
+	&__heading{
+		@include element--margin-full(0, 0, 40px, 0);
+	}
 	
 }
 
@@ -156,23 +197,21 @@ body{
 	
 	&--cta{
 	text-transform:uppercase;
-	padding: 15px 20px;
+	@include element--padding-full(10px, 15px, 10px, 15px);
 	font-size: 1.14285714em;
-	margin: 10px 0;
+	@include element--margin-full(10px, 0, 10px, 0);
 	}
 
 	&--scroll{
 		color: #FFF;
-		font-size: 2.5em;
+		font-size: 2.4em;
 		&:hover,
 		&:focus,
 		&:active{
 			color: #f6f6f6;
 		}
 
-		&-holder{
-			padding: 25px 0;
-		}
+		
 
 		
 	}
@@ -182,7 +221,7 @@ body{
 
 .header{
 
-	padding: 60px 0 25px 0;
+	@include element--padding-full(10px, 0, 10px, 0);
 
 	&--top{
 		text-align: center;
@@ -199,6 +238,7 @@ body{
 	
 	&__heading{
 		font-weight: 300;
+		@include element--margin-full(0, 0, 15px, 0);
 	}
 }
 
@@ -206,18 +246,7 @@ body{
 
 .logo{
 	display: inline-block;
-	margin: 30px 0 80px 0;
-}
-
-//AMAZING FEATURE
-.amazing{
-		&-feature{
-			&-holder{
-				padding: 55px 0;
-			}
-
-			
-		}
+	@include element--margin-full(15px, 0, 10px, 0)
 }
 
 
@@ -226,6 +255,8 @@ body{
 .thumbnail{
 	&--custom{
 		border:none;
+		margin-bottom: 0;
+		padding: 0;
 	}
 
 	.caption {
@@ -245,35 +276,21 @@ body{
 
 .features{
 	text-align: center;
+	
 	&__content{
-		padding: 40px 0 0 0;
+		@include element--padding-vertical(40px, 0)
 	}
 
 	&__tab{
-		&-link{
-			text-align: center;
-			
-		}
-	}
-
-	&-holder{
-		padding: 55px 0 20px 0;
-	}
-
-	
-
-	&__icons{
-		&-holder{
-			float: none;
-			
-			
-		}
-	}
-	&__icon{
 		
-		display: inline-block;
-		font-size: 35px;
-    	vertical-align: middle;
+		&-link{
+			text-align: center;			
+		}
+	}
+	
+	&__icon{
+				
+		font-size: 35px;   	
 	}
 
 	&__info{
@@ -281,7 +298,18 @@ body{
 			overflow: hidden;
 		}
 	}
+	
+	&__heading{
+		@include element--padding-full(10px, 10px, 10px, 10px)
+	}
 
+}
+
+.features__tab.active .features__icon:before{
+	background: #202020;
+	border-radius:50%;
+	color:#fff;
+	
 }
 
 .nav{
@@ -322,22 +350,38 @@ body{
 	display: inline-block;
 }
 
-// .icon-number11,.icon-number12,.icon-number13{
-// 	display: none;
-// }
+// FAQ
+
+.faq{
+	&__question{
+		@include element--padding-vertical(50px, 0);
+	}
+}
+
+
 
 // CAROUSEL
 
+.carousel{
 
-#carousel{
-	&__img{
-		.item{
-			img{
-				display: block;
-				  width: 100%;
-				  height: auto;
-			}
+	&--main{
+
+		&__item{
+
+			@include background;
+			height: 300px;	
 		}
+
+		
+	}
+
+	&--clients{
+		&__item{
+			@include background;
+			height: 200px;	
+		}
+
+		
 	}
 
 	&__testimonials{
@@ -378,37 +422,16 @@ body{
 
 	}
 
-	&__clients{
-		.item{
-			img{
-				display: block;
-				  width: 100%;
-				  height: auto;
-			}
-		}
-	}
 }
 
-.carousel{
-	&__img{
-		&-holder{
-			padding: 20px 0 25px 0;
-		}
-	}
-}
 
-// FAQ
 
-.faq{
-	text-align: center;
-	padding: 20px 0 35px 0;
-}
 
 //TESTIMONIALS
 
 .testimonials{
 
-	padding: 55px 0 0 0;
+	
 
 	&__citation{
 
@@ -430,31 +453,12 @@ body{
 		height: 100px;
 		border: none;
 		border-radius: 50%;
-		background-size: cover;
-		
-		&--author1{background: url(../images/content/testimonials/author1.png) no-repeat center center;}
-		&--author2{background: url(../images/content/testimonials/author2.png) no-repeat center center;}
-		&--author3{background: url(../images/content/testimonials/author3.png) no-repeat center center;}
-		&--author4{background: url(../images/content/testimonials/author4.png) no-repeat center center;}
+		@include background;
+			
 	}
 }
 
-// CALL TO ACTION
 
-.call-to-action{
-	
-	padding: 55px 0;
-
-	&__btn{
-		padding: 20px 0;
-	}
-}
-
-// COPYRIGHTS
-
-.copyrights{
-	padding: 60px 0;
-}
 
 //BACK TO TOP BTN
 
@@ -467,24 +471,11 @@ body{
 	z-index: $zindex-tooltip;
 }
 
-// BACKGROUND XS
+// BACKGROUND
 
 .background{
-		&-main{
-			&--xs{
-				background: url(../images/background-xs.png) no-repeat center center;
-				background-size: cover;
-				
-				
-			}
-		}
-		&-cta{
-			&--xs{
-				background: url(../images/background-cta-xs.png) no-repeat center center;
-				background-size: cover;
-			}
-		}
-	}
+	@include background;		
+}
 
 //  MAIN
 
@@ -494,25 +485,6 @@ body{
  
 @media (min-width: $screen-sm) {
 
-	// BACKGROUND XS
-	
-	.background{
-		&-main{
-			&--lg{
-				background: url(../images/background-lg.png) no-repeat center center;
-				background-size: cover;
-				
-				
-			}
-		}
-
-		&-cta{
-			&--lg{
-				background: url(../images/background-cta-lg.png) no-repeat center center;
-				background-size: cover;
-			}
-		}
-	}
 
 	// CALL TO ACTION
 
@@ -541,5 +513,10 @@ body{
 		}
 	}
 
+	//PULL LEFT
+	
+	.pull-sm-left{
+		float:left;
+	} 
 	
 }

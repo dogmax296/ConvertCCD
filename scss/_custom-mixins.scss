@@ -1,18 +1,36 @@
-// HEADING PADDING
+// PADDING
 
-@mixin heading-padding{
-	padding-top: $padding-standart-top;
-	padding-bottom: $padding-standart-bottom;
+@mixin element--padding-full($padding-top, $padding-right, $padding-bottom, $padding-left){
+	padding-top: $padding-top;
+	padding-right: $padding-right;
+	padding-bottom: $padding-bottom;
+	padding-left: $padding-left;
 }
 
-// TEXT PADDING
-
-@mixin standart-text-padding{
-	padding-top: $padding-standart-top;
-	padding-bottom: $padding-standart-bottom;
+@mixin element--padding-vertical($padding-top, $padding-bottom){
+	padding-top: $padding-top;	
+	padding-bottom: $padding-bottom;
 }
 
-@mixin custom-text-padding{
-	padding-top: $padding-standart-top;
-	padding-bottom: $padding-text-bottom;
+
+
+//MARGIN
+
+@mixin element--margin-full($margin-top, $margin-right, $margin-bottom, $margin-left){
+	margin-top: $margin-top;
+	margin-right: $margin-right;
+	margin-bottom: $margin-bottom;
+	margin-left: $margin-left ;
+}
+
+@mixin element--margin-vertical($margin-top, $margin-bottom){
+	margin-top: $margin-top;	
+	margin-bottom: $margin-bottom;
+}
+
+// BACKGROUND
+
+@mixin background{
+	background: no-repeat center center;
+	background-size: cover;	
 }
